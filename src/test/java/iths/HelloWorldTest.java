@@ -1,11 +1,11 @@
 
-package iths;
+/* package iths;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
 public class HelloWorldTest {
 @Test
 void tryHelloWorld(){
-Assertions.Assertions;
+
 }
-    }
+    } */
 

@@ -1,5 +1,6 @@
 package iths;
 import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class CalculatorTest {
@@ -39,6 +40,14 @@ assertEquals(3, Calculator.add(2,1));
       double actual =Calculator.divide(10, 3);
       double delta = 0.000001;
       assertEquals(expected,actual,delta,"10 delat på 3 ska bli 3.33"); 
+   }
+   @Test
+   void divideByZeroShallThrowException(){
+      Class<IllegalArgumentException> expectedException = IllegalArgumentException.class;
+      assertThrows(expectedException,()->{
+         Calculator.divide(10,0);
+      },"Division by zero is not allowed");
+      
    }
 
 }

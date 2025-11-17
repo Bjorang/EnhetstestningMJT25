@@ -1,9 +1,11 @@
  package iths;
 
 import org.junit.platform.suite.api.Suite;
-import org.junit.platform.suite.api.SelectClasses;
+import org.junit.platform.suite.api.SelectPackages;
 @Suite
-@SelectClasses({CalculatorTest.class})
+@SelectPackages("iths")
+/* @SelectClasses({CalculatorTest.class,
+GradeCalculatorTest.class}) */
 public class AllUnitTest {
     
     

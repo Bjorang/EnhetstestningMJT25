@@ -55,20 +55,20 @@
     <plugins>
         <plugin>
            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-surefire-plugin</artifactId>
-            <version>3.5.4</version> 
-            <configuration>
-                <useFile>false</useFile>
-                <reportNameSuffix>NONE</reportNameSuffix> 
-    <consoleOutputReporterEnabled>true</consoleOutputReporterEnabled> 
-    <statelessTestsetInfoReporter>true</statelessTestsetInfoReporter>
-                <includes>
-                    <include>**/AllUnitTest.java</include>
-                </includes>
-                <excludes>
-                    <exclude>**/*Test.java</exclude>
-                </excludes>
-                </configuration>
+    <artifactId>maven-surefire-plugin</artifactId>
+    <version>3.5.4</version> 
+    <configuration>
+        <useFile>false</useFile> 
+        <consoleOutputReporterEnabled>true</consoleOutputReporterEnabled> 
+        
+        <includes>
+            <include>**/AllUnitTest.java</include>
+        </includes>
+        <excludes>
+            <exclude>**/CalculatorTest.java</exclude>
+            <exclude>**/GradeCalculatorTest.java</exclude>
+        </excludes>
+    </configuration>
         </plugin>
 
         <plugin>
